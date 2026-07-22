@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8" />
+  <title>动态-FLYBULL飞牛培训</title>
+  <meta
+    name="description"
+    content="飞牛培训动态资讯，了解最新课程更新、行业新闻和学员成功故事，助力您的职业发展。"
+  />
+  <meta
+    name="keywords"
+    content="加州, CSLB, 承包商, 建筑, 电工，空调， 执照, 考试, 培训, 学校, 在线, 学习, 网课, C-10, C-20, C-36, C10, C20, C36, 加州承包商, 建筑执照, 电工执照, 空调执照, 执照考试, 建筑执照考试, CSLB考试, CSLB建筑考试, 建筑执照培训, 执照考试在线学习, 建筑执照在线学习, 建筑执照考试在线学习, 承包商在线学习, 执照学习, 执照考试在线学校, 承包商在线学校, 执照学校, 执照培训, 执照培训学校, CSLB考试培训, 承包商培训, 执照考试培训, CSLB备考, 加州承包商执照, CSLB考试准备, 加州承包商执照培训, 加州执照在线学习, CSLB在线学习, 承包商执照考试, 承包商执照备考, 加州执照备考平台, 加州执照考试技巧, 加州承包商备考, 职业考试准备, 在线执照考试准备, 加州承包商考试, 职业成功"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" sizes="64x64">
+  <link rel="icon" href="/assets/favicon32.ico" type="image/x-icon" sizes="32x32">
+  <link rel="icon" href="/assets/favicon16.ico" type="image/x-icon" sizes="16x16">
+  <link rel="manifest" href="/site.webmanifest">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/responsive.css" />
+</head>
+
+<body>
+  <header>
+    <div id="header-container" class="container">
+      <img draggable="false" id="logo-img" src="./assets/logo_cn.png" alt="logo" />
+      <nav>
+        <button type="button" class="nav-btn" onclick="location.href='./index.html'">
+          主页
+        </button>
+        <button type="button" class="nav-btn" onclick="location.href='./news.html'">
+          动态
+        </button>
+        <button type="button" class="nav-btn" onclick="location.href='./index.html#course-anchor'">
+          课程
+        </button>
+        <button type="button" class="nav-btn" onclick="location.href='./index.html#book-anchor'">
+          教材
+        </button>
+        <button type="button" class="nav-btn" onclick="location.href='./index.html#exam-anchor'">
+          试题
+        </button>
+        <button type="button" class="nav-btn" onclick="location.href='./index.html#vocabulary-anchor'">
+          词汇
+        </button>
+        <button type="button" class="nav-btn" onclick="location.href='./index.html#service-anchor'">
+          服务
+        </button>
+      </nav>
+      <div id="header-right-container">
+        <div id="mobile-header-text">飞牛建筑执照考试培训中心</div>
+        <button type="button" class="btn btn-warning" onclick="location.href='./index.html#downloads-section'">
+          下载
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="news-banner">
+    <div class="container news-banner-inner">
+      <p class="news-banner-kicker">FLYBULL NEWS</p>
+      <h1 class="news-banner-title">动态资讯</h1>
+      <p class="news-banner-subtitle">课程更新、考试信息与平台公告</p>
+    </div>
+  </section>
+
+  <section id="news-view" class="container">
+    <div class="news-view-shell">
+      <nav aria-label="breadcrumb" id="news-breadcrumb">
+        <ol class="breadcrumb news-breadcrumb-list">
+          <li class="breadcrumb-item"><a href="./index.html">主页</a></li>
+          <li class="breadcrumb-item"><a href="./news.html">动态</a></li>
+          <li class="breadcrumb-item active" id="breadcrumb-title" style="display:none;"></li>
+        </ol>
+      </nav>
+
+      <!-- Article view -->
+      <div id="news-article-view" style="display:none;">
+        <h3 class="news-article-title" id="news-article-title"></h3>
+        <p class="news-article-date" id="news-article-date"></p>
+        <div class="news-content news-article-content" id="news-article-content"></div>
+      </div>
+
+      <!-- List view -->
+      <div id="news-list-view">
+        <div id="news" class="news-index margin-row"></div>
+        <nav id="news-pager" class="news-pager margin-block" aria-label="分页" style="display:none;"></nav>
+      </div>
+    </div>
+  </section>
+
+  <footer class="margin-section">
+    <div id="footer-content" class="container">
+      <section id="contact-us" class="text-center">
+        <div class="h5 footer-title">联系我们</div>
+        <div>
+          <img draggable="false" class="footer-qrcode" id="footer-qrcode-wechat" src="./assets/wechat.jpg"
+            alt="微信ID: flybull3000" width="180px" />
+        </div>
+        <div>
+          <img draggable="false" class="footer-qrcode" id="footer-qrcode-line" src="./assets/line.jpg"
+            alt="Line ID: flybull3000" width="180px" style="display: none" />
+        </div>
+        <div id="phone-email-container">
+          <div id="footer-email"></div>
+          <div id="footer-phone" style="font-size: 1.2em"></div>
+          <div>微信ID: Flybull3000</div>
+        </div>
+        <div class="btn-group" role="group">
+          <input type="radio" class="btn-check" name="qrcode" id="wechat-radio" autocomplete="off" checked />
+          <label class="btn btn-outline-success" for="wechat-radio">微信</label>
+          <input type="radio" class="btn-check" name="qrcode" id="line-radio" autocomplete="off" />
+          <label class="btn btn-outline-success" for="line-radio">Line</label>
+          <input type="radio" class="btn-check" name="qrcode" id="other-radio" autocomplete="off" />
+          <label class="btn btn-outline-success" for="other-radio">其他</label>
+        </div>
+      </section>
+      <section class="text-center">
+        <div class="h5 footer-title">地址</div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d413.4520877154566!2d-117.67978597116394!3d34.002377798478975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c333ac9185971d%3A0x4a86f00f31af5f76!2zRmx5YnVsbOmjnueJm-W7uuetkeaJp-eFp-iAg-ivleWfueiureS4reW_gw!5e0!3m2!1sen!2sus!4v1756054442600!5m2!1sen!2sus"
+            style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      <section id="social-media" class="text-center">
+        <div class="h5 footer-title">关注我们</div>
+        <div class="social-media-images">
+          <a href="https://www.xiaohongshu.com/user/profile/657604c10000000020035efa" target="_blank" rel="noopener noreferrer">
+            <img draggable="false" alt="Rednote" src="./assets/rednote.webp" />
+          </a>
+          <a href="https://www.tiktok.com/@flybull6262103000" target="_blank" rel="noopener noreferrer">
+            <img draggable="false" alt="TikTok" src="./assets/tiktok.webp" />
+          </a>
+          <a href="https://www.youtube.com/@%E9%A3%9E%E7%89%9B%E5%9F%B9%E8%AE%AD" target="_blank" rel="noopener noreferrer">
+            <img draggable="false" alt="YouTube" src="./assets/youtube.webp" />
+          </a>
+          <a href="https://www.kuaishou.com/search/%E9%A3%9E%E7%89%9B%E5%9F%B9%E8%AE%AD?source=NewReco" target="_blank" rel="noopener noreferrer">
+            <img draggable="false" alt="Kuaishou" src="./assets/kuaishou.webp" />
+          </a>
+        </div>
+      </section>
+    </div>
+    <div class="copyright">
+      <p id="copyright-p">
+        &copy; <span><span id="copyright-year">2025</span> Flybull. All rights reserved.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./scripts/footer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script>
+window.onload = function () {
+  setupFooterContacts();
+};
+
+(function () {
+  var rowPerPage = 15;
+  var currentPage = 1;
+  var newsList = null;
+
+  var articleView = document.getElementById("news-article-view");
+  var listView = document.getElementById("news-list-view");
+  var breadcrumbTitle = document.getElementById("breadcrumb-title");
+  var articleTitle = document.getElementById("news-article-title");
+  var articleDate = document.getElementById("news-article-date");
+  var articleContent = document.getElementById("news-article-content");
+  var newsDiv = document.getElementById("news");
+  var pager = document.getElementById("news-pager");
+
+  var urlParams = new URLSearchParams(window.location.search);
+
+  if (urlParams.has("id")) {
+    showArticle(urlParams.get("id"));
+  } else {
+    if (urlParams.has("page")) {
+      currentPage = parseInt(urlParams.get("page"), 10) || 1;
+    }
+    showList();
+  }
+
+  window.addEventListener("popstate", function () {
+    var params = new URLSearchParams(window.location.search);
+    if (params.has("id")) {
+      showArticle(params.get("id"));
+    } else {
+      currentPage = params.has("page") ? parseInt(params.get("page"), 10) || 1 : 1;
+      if (!newsList) {
+        showList();
+      } else {
+        renderList();
+      }
+    }
+  });
+
+  async function showArticle(id) {
+    articleView.style.display = "";
+    listView.style.display = "none";
+    breadcrumbTitle.style.display = "";
+
+    articleTitle.textContent = "Loading...";
+    articleDate.textContent = "";
+    articleContent.textContent = "";
+
+    try {
+      var news;
+      var cached = localStorage.getItem("news-" + id);
+      if (cached) {
+        news = JSON.parse(cached);
+      } else {
+        var response = await fetch("https://site.flybull.net/news?id=" + id);
+        news = await response.json();
+        localStorage.setItem("news-" + id, JSON.stringify(news));
+      }
+
+      document.title = news.title;
+      breadcrumbTitle.textContent = news.title;
+      articleTitle.textContent = news.title;
+      articleDate.textContent = news.date;
+      articleContent.innerHTML = news.content;
+    } catch (e) {
+      articleTitle.textContent = "加载失败";
+    }
+  }
+
+  async function showList() {
+    articleView.style.display = "none";
+    listView.style.display = "";
+
+    try {
+      var response = await fetch("https://site.flybull.net/news");
+      newsList = await response.json();
+      renderList();
+    } catch (e) {
+      window.location.replace("/index.html");
+    }
+  }
+
+  function renderList() {
+    newsDiv.replaceChildren();
+
+    var numOfPages = Math.ceil(newsList.length / rowPerPage);
+    var startNum = (currentPage - 1) * rowPerPage;
+    var endNum = Math.min(startNum + rowPerPage, newsList.length);
+    var currentList = newsList.slice(startNum, endNum);
+
+    currentList.forEach(function (n) {
+      var a = document.createElement("a");
+      a.className = "news-row";
+      a.href = "./news.html?id=" + n.id;
+
+      var title = document.createElement("span");
+      title.className = "news-row-title";
+      title.textContent = n.title;
+
+      var date = document.createElement("span");
+      date.className = "news-row-date";
+      date.textContent = n.date;
+
+      a.appendChild(title);
+      a.appendChild(date);
+      newsDiv.appendChild(a);
+    });
+
+    // Pager
+    pager.replaceChildren();
+    if (numOfPages > 1) {
+      pager.style.display = "";
+
+      var prevBtn = document.createElement("button");
+      prevBtn.type = "button";
+      prevBtn.className = "news-page-btn";
+      prevBtn.disabled = currentPage === 1;
+      prevBtn.textContent = "\u00AB";
+      prevBtn.addEventListener("click", function () {
+        gotoPage(currentPage - 1);
+      });
+      pager.appendChild(prevBtn);
+
+      for (var n = 1; n <= numOfPages; n++) {
+        (function (pageNum) {
+          var btn = document.createElement("button");
+          btn.type = "button";
+          btn.className =
+            "news-page-btn" +
+            (currentPage === pageNum ? " news-page-btn-active" : "");
+          btn.textContent = pageNum;
+          btn.addEventListener("click", function () {
+            gotoPage(pageNum);
+          });
+          pager.appendChild(btn);
+        })(n);
+      }
+
+      var nextBtn = document.createElement("button");
+      nextBtn.type = "button";
+      nextBtn.className = "news-page-btn";
+      nextBtn.disabled = currentPage === numOfPages;
+      nextBtn.textContent = "\u00BB";
+      nextBtn.addEventListener("click", function () {
+        gotoPage(currentPage + 1);
+      });
+      pager.appendChild(nextBtn);
+    } else {
+      pager.style.display = "none";
+    }
+  }
+
+  function gotoPage(n) {
+    var params = new URLSearchParams(window.location.search);
+    params.set("page", n);
+    var newUrl = window.location.pathname + "?" + params.toString();
+    window.history.pushState({}, "", newUrl);
+    currentPage = n;
+    renderList();
+  }
+})();
+  </script>
+</body>
+
+</html>

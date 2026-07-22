@@ -1,0 +1,455 @@
+@media (max-width: 1050px) {
+  #footer-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #social-media {
+    width: 100%;
+    order: 10;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    padding: 0;
+  }
+
+  body header nav {
+    display: none;
+  }
+
+  #mobile-header-text {
+    display: block;
+  }
+
+  #header-right-container button {
+    display: none;
+  }
+
+  #logo-img {
+    height: 70px;
+    width: auto;
+  }
+
+  #banner {
+    margin-top: 90px;
+    min-height: auto;
+  }
+
+  #hero-content {
+    min-height: auto;
+    padding: 40px 0;
+    justify-content: center;
+  }
+
+  #hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .btn-hero {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+
+  #platforms-img {
+    transform: translate(0, 0);
+  }
+
+  .margin-section {
+    margin-top: 50px;
+  }
+
+  .margin-block {
+    margin-top: 25px;
+  }
+
+  #service-section .service-container {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  #classroom {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0;
+  }
+
+  .course-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .course-col {
+    gap: 10px;
+  }
+
+  .course-list:first-of-type .course-col:nth-child(2) {
+    display: none;
+  }
+
+  #course-more-btn {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .course-images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 380px;
+    width: 100%;
+    justify-self: center;
+    order: -1;
+  }
+
+  .course-titles {
+    font-size: 0.92rem;
+    padding: 9px 10px;
+  }
+
+  .book-gallery {
+    gap: 0;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  #exam {
+    display: block;
+  }
+
+  .question-nums {
+    display: none !important;
+  }
+
+  .question-panel {
+    display: block;
+    width: 100%;
+    padding: 0 4px;
+  }
+
+  #exam-question-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .question-option {
+    margin: 0 0 10px 0;
+    font-size: 0.92rem;
+    padding: 0;
+  }
+
+  .question-option .form-check-input {
+    display: none;
+  }
+
+  .question-option .form-check-label {
+    display: block;
+    padding: 10px 14px;
+    border: 1.5px solid #e0d6c8;
+    border-radius: 8px;
+    background: #fffdf8;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    line-height: 1.4;
+  }
+
+  .question-option .form-check-label:hover {
+    border-color: #d4a017;
+    background: #fff9ef;
+  }
+
+  .question-option .form-check-label.text-success {
+    border-color: #28a745;
+    background: #eafbee;
+  }
+
+  .question-option .form-check-label.text-danger {
+    border-color: #dc3545;
+    background: #fef0f0;
+  }
+
+  .question-btns {
+    display: none !important;
+  }
+
+  .question-nav {
+    max-width: 100%;
+  }
+
+  .mobile-only-btn {
+    display: inline-block;
+  }
+
+  #offcanvasScrollingLabel .ai-icon {
+    font-size: 0.9rem;
+  }
+
+  #exam-explanation-text {
+    font-size: 0.9rem;
+  }
+
+  #offcanvasScrollingLabel {
+    font-size: 1rem;
+  }
+
+  #vocabulary .btn-lg {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .vocab-option {
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 1rem;
+  }
+
+  .vocab-study-card {
+    padding: 30px 20px;
+  }
+
+  .vocab-study-word {
+    font-size: 2rem;
+  }
+
+  .vocab-study-cn {
+    font-size: 1.4rem;
+  }
+
+  .vocab-input {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.5rem;
+  }
+
+  .input-hin-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .vocab-cn {
+    font-size: 1.5rem;
+  }
+
+  #prog-bar {
+    font-size: 0.6em;
+  }
+
+  .service-icon-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .service-icon {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-name {
+    font-size: 0.88rem;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  #breadcrumb-title {
+    display: none;
+  }
+
+  #neon-label {
+    right: 10%;
+  }
+
+  #news-banner {
+    min-height: 190px;
+  }
+
+  .news-banner-title {
+    font-size: 1.7rem;
+  }
+
+  .news-banner-subtitle {
+    font-size: 0.92rem;
+  }
+
+  .news-view-shell {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .news-row {
+    padding: 12px 12px;
+  }
+
+  .feedback-card {
+    flex: 0 0 calc(50% - 12px);
+  }
+
+}
+
+@media (max-width: 768px) {
+  #logo-img {
+    height: 55px;
+    width: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  #logo-img {
+    height: 50px;
+    width: auto;
+  }
+
+  .downloads-desktop {
+    display: none;
+  }
+
+  header {
+    position: inherit;
+  }
+
+  #header-container {
+    justify-content: space-around;
+  }
+
+  #banner {
+    margin-top: 0;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #liveToast-container {
+    display: none;
+  }
+  
+  #footer-content {
+    display: block;
+    padding-top: 10px;
+  }
+
+  footer section {
+    width: unset;
+  }
+
+  footer section:nth-child(2) {
+    width: unset;
+    margin: 0 auto;
+  }
+
+  #downloads-mobile {
+    display: block;
+  }
+
+  #neon-label {
+    scale: 0.5;
+    right : 0;
+  }
+
+  .section-cta-btn {
+    padding: 7px 16px;
+    font-size: 0.92rem;
+  }
+
+  .service-icon-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+
+  .course-images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 100%;
+    gap: 8px;
+  }
+
+  .service-icon {
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(80, 56, 0, 0.1);
+  }
+
+  .service-icon-img {
+    aspect-ratio: 1 / 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .service-name {
+    font-size: 0.72rem;
+    line-height: 1.25;
+    padding: 6px 4px 8px;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .news-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .news-row-title {
+    white-space: normal;
+  }
+
+  .google-map {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .feedback-card {
+    flex: 0 0 calc(100% - 0px);
+  }
+
+  .feedback-arrow {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer section:nth-child(2) {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .google-map {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
