@@ -14,8 +14,8 @@ function toHome() {
 }
 
 const MAC_DOWNLOAD_URLS = {
-  appleSilicon: "https://github.com/flybulldev/flybull/releases/download/v1.4.8/Flybull-1.4.8-arm64.dmg",
-  intel: "https://github.com/flybulldev/flybull/releases/download/v1.4.8/Flybull-1.4.8-universal.dmg",
+  appleSilicon: "https://github.com/flybulldev/flybull/releases/download/v1.4.9/Flybull-1.4.9-arm64.dmg",
+  intel: "https://github.com/flybulldev/flybull/releases/download/v1.4.9/Flybull-1.4.9-universal.dmg",
 };
 let detectedMacChipType = "unknown";
 
