@@ -50,7 +50,7 @@ async function getMacChipType() {
 }
 
 function getMacDownloadUrl(chipType) {
-  return chipType === "apple-silicon" ? MAC_DOWNLOAD_URLS.appleSilicon : MAC_DOWNLOAD_URLS.intel;
+  return chipType === "intel" ? MAC_DOWNLOAD_URLS.intel : MAC_DOWNLOAD_URLS.appleSilicon;
 }
 
 function setupMacDownloadButton() {
