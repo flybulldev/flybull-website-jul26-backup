@@ -14,8 +14,8 @@ function toHome() {
 }
 
 const MAC_DOWNLOAD_URLS = {
-  appleSilicon: "https://github.com/flybulldev/flybull/releases/download/v1.5.0/Flybull-1.5.0-arm64.dmg",
-  intel: "https://github.com/flybulldev/flybull/releases/download/v1.4.9/Flybull-1.4.9-universal.dmg",
+  appleSilicon: "https://github.com/flybulldev/flybull/releases/download/v1.5.2/Flybull-1.5.2-arm64.dmg",
+  universal: "https://github.com/flybulldev/flybull/releases/download/v1.5.2/Flybull-1.5.2-universal.dmg",
 };
 let detectedMacChipType = "unknown";
 
@@ -50,7 +50,20 @@ async function getMacChipType() {
 }
 
 function getMacDownloadUrl(chipType) {
-  return chipType === "intel" ? MAC_DOWNLOAD_URLS.intel : MAC_DOWNLOAD_URLS.appleSilicon;
+  return chipType === "intel" ? MAC_DOWNLOAD_URLS.universal : MAC_DOWNLOAD_URLS.appleSilicon;
+}
+
+// Trigger a download in the current tab. GitHub release assets respond with
+// Content-Disposition: attachment, so the browser downloads the file without
+// navigating away — no leftover blank tab like window.open("_blank").
+function downloadFile(url) {
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.rel = "noopener";
+  anchor.style.display = "none";
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.remove();
 }
 
 function setupMacDownloadButton() {
@@ -64,8 +77,13 @@ function setupMacDownloadButton() {
     detectedMacChipType = "unknown";
   });
 
-  macDownloadButton.addEventListener("click", () => {
-    window.open(getMacDownloadUrl(detectedMacChipType), "_blank");
+  macDownloadButton.addEventListener("click", (event) => {
+    // Hidden shortcut: Shift+click skips chip detection and downloads the universal build.
+    if (event.shiftKey) {
+      downloadFile(MAC_DOWNLOAD_URLS.universal);
+      return;
+    }
+    downloadFile(getMacDownloadUrl(detectedMacChipType));
   });
 }
 
