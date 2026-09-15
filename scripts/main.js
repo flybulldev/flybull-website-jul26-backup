@@ -14,7 +14,7 @@ function toHome() {
 }
 
 const MAC_DOWNLOAD_URLS = {
-  appleSilicon: "https://github.com/flybulldev/flybull/releases/download/v1.5.2/Flybull-1.5.2-arm64.dmg",
+  appleSilicon: "https://github.com/flybulldev/flybull/releases/download/v1.5.3/Flybull-1.5.3-arm64.dmg",
   universal: "https://github.com/flybulldev/flybull/releases/download/v1.5.2/Flybull-1.5.2-universal.dmg",
 };
 let detectedMacChipType = "unknown";
@@ -620,6 +620,7 @@ const translations = [
   render();
 })();
 
+/* News section removed from homepage
 (function () {
   var newsList = document.getElementById("news");
 
@@ -659,6 +660,7 @@ const translations = [
       });
     });
 })();
+*/
 (function () {
   var vocabs = [
     {
